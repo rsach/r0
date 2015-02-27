@@ -11,7 +11,7 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
-    <string name="fb_app_id">911632642215000</string>
-    <string name="fb_app_secret">394d8540205d9d966607a9eab91bdfe4</string>
+    <string name="fb_app_id">911a632642215000</string>
+    <string name="fb_app_secret">394ad8540205d9d966607a9eab91bdfe4</string>
 
 </resources>
