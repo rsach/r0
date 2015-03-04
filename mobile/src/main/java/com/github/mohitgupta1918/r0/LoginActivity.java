@@ -26,12 +26,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.facebook.widget.LoginButton;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.SignInButton;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+
 
 import com.facebook.Session.*;          // facebook
 
@@ -117,6 +120,12 @@ public class LoginActivity extends PlusBaseActivity implements LoaderCallbacks<C
         mProgressView = findViewById(R.id.login_progress);
         mEmailLoginFormView = findViewById(R.id.email_login_form);
         mSignOutButtons = findViewById(R.id.plus_sign_out_buttons);
+
+        //fb get permissions
+
+        LoginButton authButton = (LoginButton) findViewById(R.id.authButton);
+        authButton.setReadPermissions(Arrays.asList("public_profile","email","user_actions.fitness","user_hometown","user_location"));
+
     }
 
     private void populateAutoComplete() {
